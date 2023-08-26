@@ -547,7 +547,7 @@ h6,
 @media (max-width: 768px) {
   #header-carousel .carousel-item {
       position: relative;
-      min-height: 680px;
+      min-height: 700px;
   }
   
   #header-carousel .carousel-item img {
