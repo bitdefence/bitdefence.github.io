@@ -235,54 +235,10 @@ h6,
 /* ======================================================================================= Main Navigation */
 
 .main-header {
-  padding-top: 45px;
+  /* padding-top: 45px; */
   transition: all 0.5s ease;
   z-index: 99;
 }
-/* 
-.main-header .search {
-  max-width: 140px;
-}
-.main-header .search .btn {
-  line-height: 1;
-}
-.main-header .search .btn i {
-  font-size: 20px;
-}
-.main-header .search .form-control {
-  color: #fff;
-}
-.main-header .search .form-control::-moz-placeholder {
-  color: #95A5CE;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-.main-header .search .form-control:-ms-input-placeholder {
-  color: #95A5CE;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-.main-header .search .form-control::placeholder {
-  color: #95A5CE;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: capitalize;
-}*/
-
-/* .main-header .navbar-collapse .navbar-nav {
-  padding-left: 60px;
-}
-.main-header .navbar-collapse .navbar-nav .nav-item .nav-link {
-  font-size: 17px;
-  padding: 0px 50px 0 0;
-  color: #fff;
-  font-weight: 500;
-}
-.main-header .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  color: #1642B9;
-}  */
 
 .main-header.sticky {
   position: fixed;
@@ -295,32 +251,7 @@ h6,
   transition: .5s;
   box-shadow: 0px 10px 30px rgba(0, 71, 55, 0.1);
 }
-/* 
-.main-header.sticky .search .form-control {
-  color: #000;
-}
-.main-header.sticky .search .form-control::-moz-placeholder {
-  color: #000;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-.main-header.sticky .search .form-control:-ms-input-placeholder {
-  color: #000;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-.main-header.sticky .search .form-control::placeholder {
-  color: #000;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: capitalize;
-} */
 
-/* .main-header.sticky .search i {
-  color: #000 !important;
-} */
 .main-header .nav-toggler i {
   font-size: 35px;
 }
@@ -339,7 +270,6 @@ h6,
 .main-header .offcanvas .navbar-nav .nav-link {
   color: #fff;
 }
-
 
 /* Close Button */
 .btn-close {
@@ -389,8 +319,13 @@ h6,
 
 /* ======================================================================================= Navbar Menu Screens*/
 
-/* Mobile screens */
+/* Mobile screens and Tablet*/
 @media (max-width: 991.98px) {
+    .main-header {
+      padding-top: 5px;
+      transition: all 0.5s ease;
+      z-index: 99;
+    }
   
     .main-header .navbar-nav .nav-link,
     .main-header .navbar-nav .nav-link.show {
@@ -420,13 +355,21 @@ h6,
 
 /* Large screens */
 @media (min-width: 992px) {
+  .top-header{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    transition: .5s;
+  }
+  
   .main-header {
     position: absolute;
+    padding-top: 45px;
     width: 100%;
     top: 0;
     left: 0;
     border-bottom: 1px solid rgba(256, 256, 256, .1);
-    z-index: 999;
+    z-index: 99;
     transition: .5s;
   }
 
@@ -1188,7 +1131,7 @@ a.back-top.visible {
 /*max-width-767.98px*/
 @media (max-width: 767.98px) {
   .main-header {
-    padding-top: 30px;
+    padding-top: 5px;
   }
   .service, .our-service, .portfolio, .pricing, .faq {
     padding: 40px 0;
