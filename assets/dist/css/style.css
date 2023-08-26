@@ -1,0 +1,390 @@
+
+/* @media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+} */
+
+
+
+/* ============================================================================================================================================ */
+
+.main-header {
+  padding-top: 45px;
+  transition: all 0.5s ease;
+  z-index: 99;
+}
+.main-header .search {
+  max-width: 140px;
+}
+.main-header .search .btn {
+  line-height: 1;
+}
+.main-header .search .btn i {
+  font-size: 20px;
+}
+.main-header .search .form-control {
+  color: #fff;
+}
+.main-header .search .form-control::-moz-placeholder {
+  color: #95A5CE;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.main-header .search .form-control:-ms-input-placeholder {
+  color: #95A5CE;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.main-header .search .form-control::placeholder {
+  color: #95A5CE;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.main-header .navbar-collapse .navbar-nav {
+  padding-left: 60px;
+}
+.main-header .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-size: 17px;
+  padding: 0px 50px 0 0;
+  color: #061434;
+  font-weight: 500;
+}
+.main-header .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #1642B9;
+}
+.main-header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 12px 0;
+  background: #fff;
+  box-shadow: 0px 10px 30px rgba(0, 71, 55, 0.1);
+}
+.main-header.sticky .search .form-control {
+  color: #000;
+}
+.main-header.sticky .search .form-control::-moz-placeholder {
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.main-header.sticky .search .form-control:-ms-input-placeholder {
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.main-header.sticky .search .form-control::placeholder {
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.main-header.sticky .search i {
+  color: #000 !important;
+}
+.main-header .nav-toggler i {
+  font-size: 35px;
+}
+.main-header .offcanvas .offcanvas-header .btn-close {
+  margin33-top: -25px;
+  margin33-right: 0px;
+}
+.main-header .offcanvas .offcanvas-header .btn-close i {
+  font-size: 35px;
+  color: #061434;
+}
+.main-header .offcanvas .navbar-nav .nav-link {
+  color: #061434;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+/* ======================================================================================== */
+.btn-close {
+  background: none;
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+
+
+
+/* ======================================================================================= */
+
+@media screen and (max-width: 9999px) and (min-width: 2400px) {
+  .hero-banner::before {
+    width: 55%;
+  }
+  .hero-banner::after {
+    width: 45%;
+  }
+  .contact::before {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 2399px) and (min-width: 1700px) {
+  .hero-banner::before {
+    width: 60%;
+  }
+  .hero-banner::after {
+    width: 40%;
+  }
+  .contact::before {
+    background-size: cover;
+  }
+}
+/*max-width-1024px*/
+@media (max-width: 1199.98px) {
+  .main-header .offcanvas .navbar-nav .nav-link {
+    padding: 0 0 20px;
+  }
+  .hero-banner .left-hero-color {
+    padding-top: 150px;
+  }
+  .hero-banner .left-hero-color h1, .hero-banner .left-hero-color .h1 {
+    font-size: 60px;
+  }
+  .hero-banner .right-hero-color {
+    padding-top: 100px;
+  }
+  .service, .our-service, .portfolio, .pricing, .faq {
+    padding: 100px 0;
+  }
+  .portfolio .portfolio-wrap {
+    position: unset;
+  }
+  .card-body {
+    padding: 30px;
+  }
+  .price-plan .card-body {
+    padding: 40px 15px 30px;
+  }
+  .footer {
+    padding: 80px 0 80px;
+  }
+  .footer .footer-logo-col {
+    padding-right: 0;
+  }
+  .footer .subscribe .input-group .form-control {
+    width: 100%;
+  }
+  .footer .subscribe .input-group button {
+    width: 100%;
+    margin33-top: 15px;
+  }
+}
+/*max-width-991.98px*/
+@media (max-width: 991.98px) {
+  .hero-banner .left-hero-color h1, .hero-banner .left-hero-color .h1 {
+    font-size: 40px;
+  }
+  .hero-banner .left-hero-color p {
+    padding: 20px 0;
+  }
+  .service, .our-service, .portfolio, .pricing, .faq {
+    padding: 80px 0;
+  }
+  .service .row .col-xxl-4:last-child {
+    margin33-top: 30px;
+  }
+  .portfolio .row .col-xxl-4:last-child {
+    margin33-top: 30px;
+  }
+  .portfolio .portfolio-slider .owl-stage {
+    left: 30px;
+  }
+  .portfolio .portfolio-slider .owl-stage .owl-item .item {
+    margin33: 0 -35px 0 -52px;
+  }
+  .price-plan .col-xxl-4:last-child {
+    margin33-top: 30px;
+  }
+  .portfolio-slider {
+    padding: 0 15px;
+  }
+  .contact .testimonial .details {
+    padding: 90px 150px 30px 0;
+  }
+  .contact .trusted-companies {
+    padding-top: 80px;
+  }
+  .footer .footer-logo-col p {
+    padding: 25px 0 20px;
+  }
+  .footer .row .col-xxl-4 {
+    margin33-bottom: 30px;
+  }
+  .footer h5, .footer .h5 {
+    padding-bottom: 20px;
+  }
+}
+/*max-width-767.98px*/
+@media (max-width: 767.98px) {
+  .main-header {
+    padding-top: 30px;
+  }
+  .service, .our-service, .portfolio, .pricing, .faq {
+    padding: 40px 0;
+  }
+  .hero-banner {
+    padding-bottom: 30px;
+  }
+  .hero-banner::after {
+    width: 100%;
+    height: 35%;
+    top: 65%;
+  }
+  .hero-banner::before {
+    width: 100%;
+    height: 65%;
+  }
+  .hero-banner .left-hero-color {
+    padding-top: 100px;
+  }
+  .hero-banner .left-hero-color h1, .hero-banner .left-hero-color .h1 {
+    max-width: 100%;
+    font-size: 32px;
+  }
+  .hero-banner .right-hero-color {
+    padding-top: 20px;
+  }
+  br {
+    display: none;
+  }
+  .fs-2 {
+    font-size: 30px !important;
+  }
+  .service small, .service .small, .portfolio small, .portfolio .small {
+    padding-bottom: 20px;
+  }
+  .service .step-row, .portfolio .step-row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .service .row .col-xxl-4, .portfolio .row .col-xxl-4 {
+    margin33-bottom: 20px;
+  }
+  .service .row .col-xxl-4:last-child, .portfolio .row .col-xxl-4:last-child {
+    margin33-top: 0;
+    margin33-bottom: 0;
+  }
+  .section-btn {
+    margin33-top: 20px;
+  }
+  .our-service img {
+    margin33-bottom: 20px;
+  }
+  .our-service small, .our-service .small {
+    padding-bottom: 20px;
+  }
+  .our-service p {
+    padding: 20px 0 25px;
+  }
+  .our-service ul li i {
+    top: 5px;
+  }
+  .pricing .pricing-head::after {
+    top: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  .pricing .price-plan .col-xxl-4 {
+    margin33-bottom: 25px;
+  }
+  .pricing .price-plan .col-xxl-4:last-child {
+    margin33-top: 0;
+  }
+  .pricing .price-plan .card-body::before {
+    top: 100px;
+  }
+  .pricing .price-plan .card-body ul li {
+    padding-bottom: 5px;
+  }
+  .pricing .price-plan h2 .fs-2, .pricing .price-plan .h2 .fs-2 {
+    font-size: 40px !important;
+  }
+  .faq .accordion-block .accordion-button {
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .faq .accordion-block .accordion-button:not(.collapsed)::after {
+    height: 15px;
+    width: 15px;
+    top: 10px;
+  }
+  .faq .accordion-block .accordion-body {
+    padding: 20px;
+  }
+  .contact {
+    padding: 40px 0 40px;
+  }
+  .contact .dots-shape-left {
+    display: none;
+  }
+  .contact .agree {
+    padding-bottom: 10px;
+  }
+  .contact small, .contact .small {
+    padding-bottom: 20px;
+  }
+  .contact .testimonial {
+    padding-bottom: 20px;
+  }
+  .contact .testimonial .details {
+    padding: 30px 0px 30px 0;
+  }
+  .contact .testimonial .details::before {
+    top: 20px;
+    width: 100%;
+  }
+  .contact .trusted-companies {
+    padding-top: 40px;
+  }
+  .form-group {
+    margin33-bottom: 25px;
+  }
+  .footer {
+    padding: 40px 0 40px;
+  }
+  .footer h5, .footer .h5 {
+    padding-bottom: 15px;
+  }
+  .footer ul li a {
+    padding-bottom: 15px;
+  }
+  .footer .row .col-xxl-2 {
+    margin33-bottom: 30px;
+  }
+  .footer .copyrights {
+    padding-top: 10px;
+    line-height: 30px;
+  }
+  .portfolio .portfolio-slider .owl-stage {
+    left: 35px;
+  }
+}
