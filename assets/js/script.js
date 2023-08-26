@@ -8,16 +8,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 (function ($) {
   'use strict';
 
@@ -53,6 +43,11 @@
     pauseOnHover: false
   });
   $('.hero-slider').slickAnimation();
+
+
+
+  // banner-carousel
+  
 
   /* ========================================================================= */
   /*	Portfolio Filtering Hook

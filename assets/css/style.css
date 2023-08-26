@@ -539,7 +539,8 @@ h6,
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgba(3, 21, 39, 0.7);
+  /* background: rgba(3, 21, 39, 0.7); */
+  background: rgba(2, 13, 25, 0.7);
   z-index: 1;
 }
 
@@ -556,6 +557,16 @@ h6,
       height: 100%;
       object-fit: cover;
   }
+
+  #header-carousel .carousel-item .items {
+    padding: 50px;
+  }
+
+  #header-carousel .carousel-item .buttons {
+    padding-top: 50px;
+  }
+
+
 
   /* .carousel-caption h5 {
     font-size: 20px;

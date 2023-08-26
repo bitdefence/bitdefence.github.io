@@ -62,26 +62,57 @@
     });
 
 
+    $(document).ready(function() {
+        // Prevent text selection for elements within the carousel
+        $(".carousel_container .carousel-caption").css("-webkit-touch-callout", "none");
+        $(".carousel_container .carousel-caption").css("-webkit-user-select", "none");
+        $(".carousel_container .carousel-caption").css("-khtml-user-select", "none");
+        $(".carousel_container .carousel-caption").css("-moz-user-select", "none");
+        $(".carousel_container .carousel-caption").css("-ms-user-select", "none");
+        $(".carousel_container .carousel-caption").css("user-select", "none");
+    });
+
+
+
+
+    // $(document).ready(function() {
+    //     // Enable drag sliding for the carousel
+    //     $("#header-carousel").on("touchstart mousedown", function(e) {
+    //         var startX = e.type === "touchstart" ? e.originalEvent.touches[0].pageX : e.pageX;
+            
+    //         $(this).one("touchmove mousemove", function(e) {
+    //             var moveX = e.type === "touchmove" ? e.originalEvent.touches[0].pageX : e.pageX;
+    //             var distanceX = moveX - startX;
+                
+    //             if (Math.abs(distanceX) > 50) {
+    //                 $(this).carousel(distanceX > 0 ? "prev" : "next");
+    //             }
+                
+    //             $(this).off("touchmove mousemove");
+    //         });
+            
+    //         $(this).one("touchend mouseup", function() {
+    //             $(this).off("touchmove mousemove");
+    //         });
+    //     });
+    // });
+
+
+
+    // $(document).ready(function() {
+    //     // Prevent text selection for elements inside the carousel
+    //     $('#header-carousel').on('mousedown', '.carousel-caption, .carousel-caption *', function(e) {
+    //         e.preventDefault();
+    //     });
+    // });
+
+
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
         time: 2000
     });
     
-    
-    // Back to top button
-    // $(window).scroll(function () {
-    //     if ($(this).scrollTop() > 100) {
-    //         $('.back-to-top').fadeIn('slow');
-    //     } else {
-    //         $('.back-to-top').fadeOut('slow');
-    //     }
-    // });
-    // $('.back-to-top').click(function () {
-    //     $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-    //     return false;
-    // });
-
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
